@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+
+body {
+    background-color: #eef3eb;
+    font-family: "Roboto", "Arial Narrow", "Avant Garde", sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+.home-title{
+    font-family: "Bebas Neue", "Franklin Gothic", "Helvetica Inserat", sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+.msg h2{
+    font-family: "Bebas Neue", "Franklin Gothic", sans-serif;
+    color: #2f3e46;
+}
+h2{
+    margin: 0;
+}
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -6,6 +27,7 @@ nav a {
     text-align: center;
     color: #cad2c5;
     text-decoration: none;
+    padding: 35px;
 }
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
@@ -19,9 +41,6 @@ main section {
 #background {
     height: 725px;
 }
-body {
-    background-color: #eef3eb;
-}
 header {
     background-color: #2f3e46;
 }
@@ -33,6 +52,10 @@ nav a:hover {
     background-color: #2f3e46;
     color: #cad2c5;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     background-color: #52796f;
@@ -43,10 +66,14 @@ nav a:hover {
 }
 .msg {
     background-color: #cad2c5;
+    line-height: 1.5em;
+    padding: 35px;
 }
 footer {
     background-color: #2f3e46;
     color: #cad2c5;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 .home-title {
     color: #2f3e46;
@@ -54,11 +81,10 @@ footer {
 h4 {
     color: #2f3e46;
 }
-.msg h2 {
-    color: #2f3e46;
-}
 .msg p {
     color: #2f3e46;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 footer a {
     color: #cad2c5;
@@ -72,6 +98,7 @@ footer a:hover {
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 #hero-img {
     width: 100%;
@@ -81,4 +108,19 @@ footer p {
 }
 footer p a:hover {
     text-decoration: underline;
-}   
+}
+#logo_link{
+    padding-top: 5px;
+}
+footer .social img{
+    padding-top: 15px;
+}
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}  
+.card-img{
+    border: 10px solid #52796f;
+} 
+main section img{
+    box-sizing: border-box;
+}
