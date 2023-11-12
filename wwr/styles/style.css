@@ -184,6 +184,60 @@ main section img{
     box-sizing: border-box;
 }
 
+/* -----------------------------------------FAQ page--------------------------------------- */
+
+#title{
+    background-color: #52796f;
+    text-align: center;
+    padding: 35px;
+    color: white;
+}
+#river-box{
+    height: auto;
+    width: 100%;
+    margin-bottom: 100px;
+}
+#river-img{
+    width: 100%;
+}
+.question-answer{
+    margin: 0 25px 100px;
+    text-align: start;
+    display: grid;
+    grid-template-columns: 70px 1fr;
+}
+.q{
+    background-color: #84a98c;
+    color: white;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.question{
+    background-color: #84a98c;
+    color: white;
+    margin: 0;
+    padding: 25px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.a{
+    background-color: #cad2c5;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.answer{
+    background-color: #cad2c5;
+    margin: 0;
+    padding: 25px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+}
+.q, .a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
