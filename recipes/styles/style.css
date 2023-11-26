@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crete+Round&family=Oswald:wght@500&display=swap');
+
+body {
+    background-color: #EEEFF3;
+    font-family: 'Crete Round', Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+#img-logo{
+    width: 150px;
+    height: auto;
+}
+header {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    color: #869FAE;
+    text-decoration: none;
+    padding: 50px;
+}
+nav a:hover {
+    background-color: #EEEFF3;
+    color: black;
+}
+#home{
+    margin: 50px 0 100px 0;
+    display: grid;
+    grid-template-columns: 2.5fr .5fr;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+#home-box{
+    grid-column: 1/3;
+    grid-row: 1/4;
+    z-index: -3;
+}
+#home-img{
+    width: 100%;
+}
+#home-msg{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    z-index: 1;
+}
+.msg{
+    padding: 10px;
+    text-align: center;
+}
+.msg h1{
+    font-family: "Bebas Neue", "Oswald", sans-serif;
+    color: #869FAE;
+}
+main{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Bebas Neue", "Oswald", sans-serif;
+}
+main a{
+    background-color: white;
+    padding: 25px;
+    box-shadow: 2px 2px 2px 1px #869FAE;
+    text-decoration: none;
+    color: #869FAE;
+}
+.img{
+    height: 400px;
+    width: 400px;
+}
+.img img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+main a h2{
+    text-align: center;
+}
+footer {
+    background-color: white;
+    color: #869FAE;
+    padding: 25px 50px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer a {
+    color: #869FAE;
+    text-decoration: none;
+}
+footer a:hover {
+    color: black;
+}

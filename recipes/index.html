@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SuperCook | Home Page</title>
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <div>
+    <div id="content">
         <header>
             <a href="index.html">
-                <img src="./images/vinilo-gorro-cubiertos.jpg" alt="SuperCook logo">
+                <img id="img-logo" src="./images/vinilo-gorro-cubiertos.jpg" alt="SuperCook logo">
             </a>
             <nav>
                 <a href="#">Home</a>
@@ -17,27 +18,33 @@
                 <a href="pizza.html">Pizza Pepperoni</a>
             </nav>
         </header>
-        <div>
-            <div>
-                <img src="./images/home1.jpg" alt="Home page image">
+        <div id="home">
+            <div id="home-box">
+                <img id="home-img" src="./images/home1.jpg" alt="Home page image">
             </div>
-            <section>
+            <section id="home-msg">
                 <div>
                     <img src="./images/home2.jpg" alt="Home page image 2">
                 </div>
-                <h1>Ideas for cooking with SuperCook</h1>
-                <p>Recipes, step by step to cook your favorite food and become a gastronomic expert. Cooking is considered a cultural act. That's right, cuisine is culture and defines the identity of people, it is deep in their customs and reflects to the world everything that their traditions contain.</p>
+                <div class="msg">
+                    <h1>Ideas for cooking with SuperCook</h1>
+                    <p>Recipes, step by step to cook your favorite food and become a gastronomic expert. Cooking is considered a cultural act. That's right, cuisine is culture and defines the identity of people, it is deep in their customs and reflects to the world everything that their traditions contain.</p>
+                </div>
             </section>
         </div>
         <main>
-            <section>
-                <img src="./images/page1.jpg" alt="Chunky Pancakes image">
+            <a href="pancakes.html">
+                <div class="img">
+                    <img src="./images/page1.jpg" alt="Chunky Pancakes image">
+                </div>
                 <h2>Chunky Pancakes</h2>
-            </section>
-            <section>
-                <img src="./images/page2.jpg" alt="CPizza Pepperoni image">
+            </a>
+            <a href="pizza.html">
+                <div class="img">
+                    <img src="./images/page2.jpg" alt="CPizza Pepperoni image">
+                </div>
                 <h2>Pizza Pepperoni</h2>
-            </section>
+            </a>
         </main>
         <footer>
             <p>SuperCook &copy; 2023 - Carlos Cervantes</p>
