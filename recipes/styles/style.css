@@ -67,17 +67,12 @@ main{
     display: flex;
     justify-content: space-evenly;
     font-family: "Bebas Neue", "Oswald", sans-serif;
-}
-main a{
-    background-color: white;
-    padding: 25px;
-    box-shadow: 2px 2px 2px 1px #869FAE;
-    text-decoration: none;
-    color: #869FAE;
+    height: auto;
 }
 .img{
     height: 400px;
     width: 400px;
+    padding-top: 25px;
 }
 .img img{
     object-fit: cover;
@@ -103,3 +98,60 @@ footer a {
 footer a:hover {
     color: black;
 }
+
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: transparent;
+    width: 450px;
+    height: 525px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side */
+  .flip-box-front {
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px #869FAE;
+    text-decoration: none;
+    color: #869FAE;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: #57696D;
+    color: #EEEFF3;
+    font-family: 'Crete Round', Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    transform: rotateY(180deg);
+  }
