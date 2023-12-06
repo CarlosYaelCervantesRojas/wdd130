@@ -196,3 +196,51 @@ footer a:hover {
 #method{
     padding: 0 30px;
 }
+
+/* Personal Site Subpage 2 (Pizza Pepperoni)*/
+
+#principal-grid{
+    padding: 0 30px;
+}
+#intro{
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+}
+#intro div{
+    grid-column: 1/2;
+    background-color: white;
+    justify-self: start;
+}
+#intro div img{
+    height: auto;
+    width: 425px;
+    padding: 55px 35px;
+}
+#intro aside{
+    padding: 0 45px;
+    grid-column: 2/3;
+} 
+#ingredients-method{
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    margin-top: 70px;
+}
+#ingredients-method aside{
+    padding-right: 50px;
+    grid-column: 1/2;
+}
+#ingredients-method div{
+    grid-column: 2/3;
+    background-color: white;
+    justify-self: start;
+}
+#ingredients-method div img{
+    height: auto;
+    width: 450px;
+    padding: 55px 35px;
+}
+.headline{
+    font-family: "Bebas Neue", "Oswald", sans-serif;
+    color: #869FAE;
+}

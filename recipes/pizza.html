@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SuperCook | Pizza Pepperoni</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <div>
         <header>
             <a href="index.html">
-                <img src="./images/vinilo-gorro-cubiertos.jpg" alt="SuperCook logo">
+                <img id="img-logo" src="./images/vinilo-gorro-cubiertos.jpg" alt="SuperCook logo">
             </a>
             <nav>
                 <a href="index.html">Home</a>
@@ -17,19 +18,15 @@
                 <a href="#">Pizza Pepperoni</a>
             </nav>
         </header>
-        <main>
-            <section>
+        <main id="principal-grid">
+            <div id="intro">
                 <div>
                     <img src="./images/page2.jpg" alt="pizza pepperoni">
                 </div>
                 <aside>
-                    <h2>Pizza Pepperoni</h2>
+                    <h2 class="headline">Pizza Pepperoni</h2>
                     <p>The preparation of this pepperoni pizza may seem difficult, however, we have simplified the steps to prepare it in a very simple way, over time you will learn and you will be able to add any ingredient that you think makes it better and even prepare a pizza of a different flavor.</p>
-                </aside>
-            </section>
-            <section>
-                <aside>
-                    <h2>Ingredients</h2>
+                    <h2 class="headline">Ingredients</h2>
                     <ul>
                         <li>Tomato</li>
                         <li>1 pizza mass</li>
@@ -40,13 +37,17 @@
                         <li>Salami</li>
                         <li>Oregano</li>
                     </ul>
-                    <h2>Method</h2>
+                </aside>
+            </div>
+            <div id="ingredients-method">
+                <aside>
+                    <h2 class="headline">Method</h2>
                     <p>First, on the mass, we spread a layer of tomato paste with the help of a knife. Then, we placed a layer of Mozzarella. Later, we cut 20 slices of pepperoni and uniformly distributed. We add a few pieces of salami. By last, we sprinkle grated cheese and oregano to our taste. We bake for 10 to 15 minutes at 180° and ready.</p>
                 </aside>
                 <div>
-                    <img src="./images/page2.2.jpg" alt="pizza pepperoni ingredients">
+                    <img src="./images/page2.2.png" alt="pizza pepperoni ingredients">
                 </div>
-            </section>
+            </div>
         </main>
         <footer>
             <p>SuperCook &copy; 2023 - Carlos Cervantes</p>
